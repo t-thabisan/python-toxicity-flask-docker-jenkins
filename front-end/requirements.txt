@@ -1,2 +1,2 @@
-flask==1.1.2
+flask==2.0.3
 blueprint==3.4.2

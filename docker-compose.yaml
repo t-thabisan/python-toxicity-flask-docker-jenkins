@@ -1,0 +1,14 @@
+version: "3"
+services:
+  service1:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile.dockerfile
+    ports:
+      - "5001:5001"
+  service2:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile.dockerfile
+    ports:
+      - "5000:5000"

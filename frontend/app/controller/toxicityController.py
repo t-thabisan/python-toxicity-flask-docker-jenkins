@@ -1,5 +1,9 @@
 from flask import render_template, redirect, url_for, request, abort
 import requests
+import time
+from prometheus_client import Summary
+
+LATENCY = Summary('toxicity_request_latency_seconds', 'Time for a request toxicity.')
 
 form_template = 'request_form.html'
 result_template = 'request_response.html'
@@ -9,6 +13,7 @@ def toxicity_form():
     return render_template(form_template)
 
 def toxicity_sentence_check():
+    start = time.time()
     sentence = request.args.get('sentence')
 
     # Empty sentence
@@ -16,8 +21,10 @@ def toxicity_sentence_check():
         sentence = undefined_string
 
     payload = {'sentence': sentence}
-    resp = requests.get('http://service2:5000/api/toxicity', params=payload)
+    resp = requests.get('http://backend_flask:5000/api/toxicity', params=payload)
     scores = resp.json()
+
+    LATENCY.observe(time.time() - start)
 
     # Call toxicity back-end and return result template
     return render_template(result_template,

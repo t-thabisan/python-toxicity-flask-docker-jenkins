@@ -1,0 +1,13 @@
+[
+  "app/tests/controller/test_toxicity_controller_request.py::test_default_return_default_string",
+  "app/tests/controller/test_toxicity_controller_request.py::test_toxicity_sentence_check_return_default_string",
+  "app/tests/model/test_detoxify_model.py::test_no_toxicity_sentence",
+  "app/tests/model/test_detoxify_model.py::test_max_toxicity",
+  "app/tests/model/test_detoxify_model.py::test_severe_toxicity_sentence",
+  "app/tests/model/test_detoxify_model.py::test_obscene_sentence",
+  "app/tests/model/test_detoxify_model.py::test_threat_sentence",
+  "app/tests/model/test_detoxify_model.py::test_identity_attack_sentence",
+  "app/tests/routes/test_toxicity_controller_bp.py::test_sentiment_form_bp_return_form_template",
+  "app/tests/routes/test_toxicity_controller_bp.py::test_sentiment_sentence_check_bp_return_result_template",
+  "app/tests/stress/test_stress_request.py::test_response"
+]

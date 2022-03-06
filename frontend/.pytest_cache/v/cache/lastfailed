@@ -1,0 +1,5 @@
+{
+  "app/tests/controller/test_front_controller.py::test_sentiment_result_request_return_result_template_2": true,
+  "app/tests/routes/test_front_routes.py::test_sentiment_sentence_check_bp_return_result_template": true,
+  "tests/controller/test_front_controller.py": true
+}

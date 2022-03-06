@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb9a85eb-0e6e-401a-8da5-6b385ee3114d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/test-requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/tests/routes/test_front_routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile.dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Dockerfile.dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/tests/controller/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/controller/toxicityController.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/controller/toxicityController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/test-requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/test-requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/tests/routes/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/controller/.pytest_cache/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/tests/controller/.pytest_cache/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/controller/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/tests/controller/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/controller/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/tests/controller/.pytest_cache/v/cache/nodeids" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/controller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/controller/test_front_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/tests/controller/test_front_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/routes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/routes/test_front_routes.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="25X3DgonqyxmcZqbOFtKWq7tKZI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hugo\OneDrive - Efrei\Documents\M2\DE II\Projet\python-toxicity-flask-docker-jenkins" />
+      <recent name="C:\Users\Hugo\OneDrive - Efrei\Documents\M2\DE II\Projet\python-toxicity-flask-docker-jenkins\backend" />
+      <recent name="C:\Users\Hugo\OneDrive - Efrei\Documents\M2\DE II\Projet\python-toxicity-flask-docker-jenkins\frontend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hugo\OneDrive - Efrei\Documents\M2\DE II\Projet\python-toxicity-flask-docker-jenkins\frontend\app" />
+      <recent name="C:\Users\Hugo\OneDrive - Efrei\Documents\M2\DE II\Projet\python-toxicity-flask-docker-jenkins\frontend\app\templates" />
+      <recent name="C:\Users\Hugo\OneDrive - Efrei\Documents\M2\DE II\Projet\python-toxicity-flask-docker-jenkins\frontend\frontapp\controller" />
+      <recent name="C:\Users\Hugo\OneDrive - Efrei\Documents\M2\DE II\Projet\python-toxicity-flask-docker-jenkins\frontend\frontapp\routes" />
+      <recent name="C:\Users\Hugo\OneDrive - Efrei\Documents\M2\DE II\Projet\python-toxicity-flask-docker-jenkins\frontend\frontapp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test_front_routes">
+    <configuration name="test_front_routes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/frontend/app/tests/routes" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/frontend/app/tests/routes/test_front_routes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="toxicityController" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-toxicity-flask-docker-jenkins" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../toxicityController.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_front_controller.test_sentiment_request_return_form_template" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-toxicity-flask-docker-jenkins" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/frontend/app/tests/controller" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_front_controller.test_sentiment_request_return_form_template&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test_front_routes" />
+        <item itemvalue="Python.toxicityController" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb9a85eb-0e6e-401a-8da5-6b385ee3114d" name="Changes" comment="" />
+      <created>1645659485845</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645659485845</updated>
+      <workItem from="1645659489316" duration="1120000" />
+      <workItem from="1646035625814" duration="105000" />
+      <workItem from="1646035767201" duration="9300000" />
+      <workItem from="1646501850453" duration="11655000" />
+      <workItem from="1646567077162" duration="10939000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python_toxicity_flask_docker_jenkins$toxicityController.coverage" NAME="toxicityController Coverage Results" MODIFIED="1646522439156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+  </component>
+</project>

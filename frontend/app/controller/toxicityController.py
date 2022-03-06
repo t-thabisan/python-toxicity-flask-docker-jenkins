@@ -5,8 +5,10 @@ form_template = 'request_form.html'
 result_template = 'request_response.html'
 undefined_string = 'NO SENTENCE DEFINED'
 
+
 def toxicity_form():
     return render_template(form_template)
+
 
 def toxicity_sentence_check():
     sentence = request.args.get('sentence')
@@ -29,5 +31,6 @@ def toxicity_sentence_check():
                            identity_hate=format(scores["identity_attack"]["value"]),
                            sentence=sentence)
 
+
 def format(value):
-    return round(value, 2)*100
+    return round(value, 2) * 100

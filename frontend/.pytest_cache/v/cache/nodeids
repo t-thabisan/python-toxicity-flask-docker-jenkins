@@ -1,0 +1,5 @@
+[
+  "app/tests/controller/test_front_controller.py::test_toxicity_request_return_form_template",
+  "app/tests/controller/test_front_controller.py::test_toxicity_form_request_return_form_template",
+  "app/tests/routes/test_front_routes.py::test_toxicity_form_bp_return_form_template"
+]

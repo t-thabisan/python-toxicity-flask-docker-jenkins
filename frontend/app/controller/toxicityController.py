@@ -16,7 +16,7 @@ def toxicity_sentence_check():
         sentence = undefined_string
 
     payload = {'sentence': sentence}
-    resp = requests.get('http://service2:5000/api/toxicity', params=payload)
+    resp = requests.get('http://backend_flask:5000/api/toxicity', params=payload)
     scores = resp.json()
 
     # Call toxicity back-end and return result template

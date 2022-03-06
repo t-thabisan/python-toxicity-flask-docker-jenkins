@@ -19,7 +19,7 @@ scrape_configs:
     static_configs:
       - targets: ['node-exporter:9100']
 
-  - job_name: flask_redis_app
+  - job_name: backend_flask
     static_configs:
-      - targets: ['front_flask_redis_app:8010']
+      - targets: ['backend_flask:8010']
 

@@ -1,13 +1,12 @@
 from flask import render_template, redirect, url_for, request, abort
+import requests
 
 form_template = 'request_form.html'
 result_template = 'request_response.html'
 undefined_string = 'NO SENTENCE DEFINED'
 
-
 def toxicity_form():
     return render_template(form_template)
-
 
 def toxicity_sentence_check():
     sentence = request.args.get('sentence')
@@ -16,15 +15,19 @@ def toxicity_sentence_check():
     if sentence is None:
         sentence = undefined_string
 
-    # Call toxicity back-end
-    # multiply values by 100
-    scores = {"toxic": 20, "severe_toxic": 11, "obscene": 0, "threat": 1, "insult": 50.0, "identity_hate": 0.0}
+    payload = {'sentence': sentence}
+    resp = requests.get('http://service2:5000/api/toxicity', params=payload)
+    scores = resp.json()
 
+    # Call toxicity back-end and return result template
     return render_template(result_template,
-                           toxic=scores["toxic"],
-                           severe_toxic=scores["severe_toxic"],
-                           obscene=scores["obscene"],
-                           threat=scores["threat"],
-                           insult=scores["insult"],
-                           identity_hate=scores["identity_hate"],
+                           toxic=format(scores["toxicity"]["value"]),
+                           severe_toxic=format(scores["severe_toxicity"]["value"]),
+                           obscene=format(scores["obscene"]["value"]),
+                           threat=format(scores["threat"]["value"]),
+                           insult=format(scores["insult"]["value"]),
+                           identity_hate=format(scores["identity_attack"]["value"]),
                            sentence=sentence)
+
+def format(value):
+    return round(value, 2)*100

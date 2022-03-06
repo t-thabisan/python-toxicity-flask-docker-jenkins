@@ -4,11 +4,43 @@ services:
     build: 
       context: ./frontend
       dockerfile: Dockerfile.dockerfile
+    container_name: front_flask_redis_app
     ports:
-      - "5001:5001"
+      - 5001:5001
+      - 8010:8010
+
   service2:
     build: 
       context: ./backend
       dockerfile: Dockerfile.dockerfile
+    container_name: back_flask_redis_app
     ports:
-      - "5000:5000"
+      - 5000:5000
+
+  node_exporter:
+    image: prom/node-exporter
+    container_name: node-exporter
+    ports:
+        - 9100:9100
+    pid: host
+    restart: always
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+        - 9090:9090
+    volumes:
+        - "./prometheus.yml:/etc/prometheus/prometheus.yml"
+        - "./rules.yml:/etc/prometheus/rules.yml"
+    restart: always
+
+  alertmanager:
+    image: prom/alertmanager
+    container_name: alertmanager
+    restart: unless-stopped
+    ports:
+        - 9093:9093
+    volumes:
+        - "./alertmanager.yml:/etc/prometheus/alertmanager.yml"
+    command: --config.file=/etc/prometheus/alertmanager.yml --log.level=debug

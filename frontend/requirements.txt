@@ -1,4 +1,4 @@
 flask==2.0.3
 blueprint==3.4.2
 requests==2.21.0
-prometheus-client
+Prometheus-client==0.13.1

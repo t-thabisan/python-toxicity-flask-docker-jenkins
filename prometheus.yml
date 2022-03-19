@@ -1,0 +1,29 @@
+global:
+  scrape_interval: 10s
+  evaluation_interval: 10s
+
+rule_files:
+  - rules.yml
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets: ['alertmanager:9093']
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets:
+        - localhost:9090
+        
+  - job_name: node
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+  - job_name: backend_flask
+    static_configs:
+      - targets: ['backend_flask:8010']
+
+  - job_name: frontend_flask
+    static_configs:
+      - targets: ['frontend_flask:8011']
+

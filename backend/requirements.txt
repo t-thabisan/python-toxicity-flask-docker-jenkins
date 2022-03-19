@@ -1,0 +1,5 @@
+flask==1.1.2
+blueprint==3.4.2
+detoxify==0.4.0
+pandas==1.1.3
+Prometheus-client==0.13.1

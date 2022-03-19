@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toxicity Result</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+</head>
+<body>
+	<form action="/toxicity/form" method="GET">
+		<section class="vh-100" style="background-color: #3f5273;">
+		  <div class="container py-5 h-100">
+			<div class="row d-flex justify-content-center align-items-center h-100">
+			  <div class="col-15 col-md-8 col-lg-6 col-xl-5">
+				<div class="card shadow-2-strong" style="border-radius: 1rem;">
+				  <div class="card-body p-5 text-center">
+					<h3 class="mb-4">SENTIMENT RESPONSE</h3>
+					
+					<!-- RESULTS BARS -->
+					<hr>
+					<div class="container">
+                      <div class="row">
+                        <div class="col-3" id="toxicity-labels" style="font-size: x-small">
+                          <div style="height: 30px ; margin-bottom: 10px" id="toxic_text">
+                              <p>Toxicity</p>
+                          </div>
+                          <div style="height: 20px ; margin-bottom: 5px" id="severe_toxic_text">
+                              <p>Severe toxic</p>
+                          </div>
+                          <div style="height: 20px ; margin-bottom: 5px" id="obscene_text">
+                              <p>Obscene</p>
+                          </div>
+                          <div style="height: 20px ; margin-bottom: 5px" id="threat_text">
+                              <p>Threat</p>
+                          </div>
+                          <div style="height: 20px ; margin-bottom: 5px" id="insult_text">
+                              <p>Insult</p>
+                          </div>
+                          <div style="height: 20px" id="identity_hate_text">
+                              <p>Identity hate</p>
+                          </div>
+                      </div>
+                        <div class="col-7" id="toxicity-bars">
+                            <div class="progress" style="height: 20px ; margin-bottom: 15px" id="toxic_bar">
+                                <div class="progress-bar" role="progressbar" style="width: {{toxic}}% ; background-color: cornflowerblue" aria-valuenow={{toxic}} aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress" style="height: 20px ; margin-bottom: 5px" id="severe_toxic_bar">
+                                <div class="progress-bar" role="progressbar" style="width: {{severe_toxic}}% ; background-color: lightskyblue" aria-valuenow={{severe_toxic}} aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress" style="height: 20px ; margin-bottom: 5px" id="obscene_bar">
+                                <div class="progress-bar" role="progressbar" style="width: {{obscene}}% ; background-color: lightskyblue" aria-valuenow={{obscene}} aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress" style="height: 20px ; margin-bottom: 5px" id="threat_bar">
+                                <div class="progress-bar" role="progressbar" style="width: {{threat}}% ; background-color: lightskyblue" aria-valuenow={{threat}} aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress" style="height: 20px ; margin-bottom: 5px" id="insult_bar">
+                                <div class="progress-bar" role="progressbar" style="width: {{insult}}% ; background-color: lightskyblue" aria-valuenow={{insult}} aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress" style="height: 20px" id="identity_hate_bar">
+                                <div class="progress-bar" role="progressbar" style="width: {{identity_hate}}% ; background-color: lightskyblue" aria-valuenow={{identity_hate}} aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-2" id="toxicity-percentages" style="font-size: x-small">
+                            <div style="height: 30px ; margin-bottom: 10px" id="toxic_percentage">
+                                <p>{{toxic}}%</p>
+                            </div>
+                            <div style="height: 20px ; margin-bottom: 5px" id="severe_toxic_percentage">
+                                <p>{{severe_toxic}}%</p>
+                            </div>
+                            <div style="height: 20px ; margin-bottom: 5px" id="obscene_percentage">
+                                <p>{{obscene}}%</p>
+                            </div>
+                            <div style="height: 20px ; margin-bottom: 5px" id="threat_percentage">
+                                <p>{{threat}}%</p>
+                            </div>
+                            <div style="height: 20px ; margin-bottom: 5px" id="insult_percentage">
+                                <p>{{insult}}%</p>
+                            </div>
+                            <div style="height: 20px" id="identity_hate_percentage">
+                                <p>{{identity_hate}}%</p>
+                            </div>
+                        </div>
+                      </div>
+					</div>
+					
+					<!-- THE SENTENCE -->
+					<hr>
+					<div class="form-outline mb-4">
+					  <label class="font-weight-bold form-label" for="sentence">Your sentence : </label>
+					  <p class="font-italic"><i>{{sentence}}</i></p>
+					</div>
+					<hr>
+					
+					<!-- THE RETURN BUTTON -->
+					<button 
+						class="btn btn-primary btn-lg btn-block" 
+						style="background-color: #6c8fc9;" 
+						type="submit">
+						Return
+					</button>
+					
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+	</form>
+</body>
+</html>
